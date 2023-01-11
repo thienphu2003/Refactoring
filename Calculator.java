@@ -1,14 +1,19 @@
 public class Calculator {
 
-    public static int calculate(int firstOperand, int secondOperand, char operator) {
+    public static final String Addition = "+";
+    public static final String Subtraction = "-";
+    public static final String Multiplication = "*";
+    public static final String Division = "/";
+
+    public static int calculate(int firstOperand, int secondOperand, String operator) {
         switch (operator) {
-            case '+':
+            case Addition:
                 return firstOperand + secondOperand;
-            case '-':
+            case Subtraction:
                 return firstOperand - secondOperand;
-            case '*':
+            case Multiplication:
                 return firstOperand * secondOperand;
-            case '/':
+            case Division:
                 if (secondOperand != 0)
                     return firstOperand / secondOperand;
                 else
